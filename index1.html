@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    .hero{
+    justify-content: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+form
+{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width:100%;
+    padding: 10px;
+    outline: 0;
+    font-size: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 7px;;
+    padding-left: 19px;
+    cursor:text;
+    color: #fff;
+    display: inline-block;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    width: 80px;
+    border: 1px solid #fff;
+    font-weight: bold;
+
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #0b141a;
+    font-size: 24px;
+    padding-bottom: 10px;
+
+
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label
+{
+    top:-35px;
+    font-size: 14px;
+}
+
+  </style>
+  <div class="hero">
+      
+    <form action="">
+        <h2>Get in touch</h2>
+        <div class="input-group">
+        <input type="text"  id="name" required>
+        <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+        </div>
+        <div class="input-group">
+            <input type="text"  id="number" required>
+            <label for="number"> <i class="fa-solid fa-phone"></i>Phone Number</label>
+            </div>
+            <div class="input-group">
+                <input type="email"  id="email" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> E-mail</i></label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="10" cols="30"></textarea>
+                    <label for="message"><i class="fa-regular fa-messages"></i>Our message</label>
+                    </div><center>
+                    <button type="submit"> <i class="fa-sharp fa-solid fa-paper-plane-top"></i>Submit</button></center>
+    </form>
+</div>
+                </div>
+            </div>
+</div>
+</div>
+</body>
+</html>
